@@ -2,6 +2,13 @@ const express = require('express');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
+app.use(cors({
+  origin: [
+    "https://apollo-clone-task-d78u7fx0p-adarsh2345s-projects.vercel.app" // Your Vercel URL
+    "http://localhost:3000"             // For local testing
+  ]
+}));
+
 // Initialize Express app
 const app = express();
 
