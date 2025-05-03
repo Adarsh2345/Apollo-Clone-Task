@@ -4,7 +4,8 @@ const cors = require('cors');
 
 app.use(cors({
   origin: [
-    "https://apollo-clone-task-d78u7fx0p-adarsh2345s-projects.vercel.app" // Your Vercel URL
+    
+  "https://apollo-clone-task.vercel.app",
     "http://localhost:3000"             // For local testing
   ]
 }));
