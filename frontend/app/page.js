@@ -26,7 +26,7 @@ export default function Filters() {
         }
       });
 
-      const response = await fetch(`http://localhost:5000/api/doctors/list-doctors?${queryParams.toString()}`);
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/doctors/list-doctors?${queryParams.toString()}`);
       const data = await response.json();
       setDoctors(data.doctors || []);
     } catch (error) {
